@@ -8,12 +8,15 @@
 </head>
 <body>
     <h1>Manipulacion del DOM basica</h1>
-    <input id="calculo1" placeholder="Escribe un numero">
-    <input id="calculo2" placeholder="Escribe otro numero">
-    //Escuchando desde el html con el metodo onclick, hay muchos mas metodos...
-    <button id="btnCalcular" onclick="escucharBtn()">Calcular</button>
+    <form id="formulario">
+        <input id="calculo1" placeholder="Escribe un numero">
+        <input id="calculo2" placeholder="Escribe otro numero">
+        <button id="btnCalcular" onclick="escucharBtn()">Calcular desde html</button>
+        <!-- otra forma mas sencilla de evitar que el boton que nos da el formulario sea de tipo submit es estableciendo el type del boton por button -->
+        <button type="button" id="btnCalcular2">Calcular desde javascript</button> 
 
-    <p id="result"></p>    
+        <p id="result"></p>   
+    </form> 
 
     <script src="./eventos.js"></script>
 </body>
